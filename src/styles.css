@@ -67,3 +67,35 @@ body {
 }
 
 
+.perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .carousel-item {
+    transform-style: preserve-3d;
+  }
+
+  
+/* .divider-text{
+position: relative;
+  text-align: center;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #000000;
+  }
+  
+.divider-text span {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000000;
+    z-index: 9;
+  } */
+
+
