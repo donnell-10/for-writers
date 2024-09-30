@@ -62,15 +62,15 @@ export const Auth = () => {
             </div>
             <div className="pt-3 px-6">
                 <h1 className="text-[18px] mb-2">Email Address</h1>
-                <input placeholder="email" onChange={(e) => setEmail(e.target.value)} className="w-full text-center bg-white text-black  border-black rounded-md border-[2px]"/> 
+                <input placeholder="email" onChange={(e) => setEmail(e.target.value)} className="w-full text-center bg-white text-black  border-black rounded-md border-[2px] h-10"/> 
             </div>              
             <div className="pt-3 px-6">
                 <h1 className="text-[18px] mb-2">Password</h1>
-                <input placeholder="password" type="password" onChange={(e) => setPassword(e.target.value)} className="w-full text-center bg-white text-black  border-black rounded-md border-[2px]"/>
+                <input placeholder="password" type="password" onChange={(e) => setPassword(e.target.value)} className="w-full text-center bg-white text-black  border-black rounded-md border-[2px] h-10"/>
             </div>
             <div >
-                <div className="flex justify-center pt-3">
-                    <button onClick={signIn} className="w-1/3 border border-black ">
+                <div className="flex justify-center pt-3 mt-3">
+                    <button onClick={signIn} className="w-1/3 border-[2px] rounded-md border-black ">
                         Sign In
                     </button>
                 </div>
@@ -83,11 +83,11 @@ export const Auth = () => {
 
             </div>
             <div className="pt-3 px-6 flex justify-between">
-                <button onClick={signInGoogle} className="flex items-center gap-2 border border-red-500 px-3 py-1 text-red-500 w-32 justify-center">
+                <button onClick={signInGoogle} className="flex items-center gap-2 border-[2px] border-red-500 px-3 py-1 text-red-500 w-32 justify-center rounded-md hover:bg-red-300">
                     <img src="/google-icon.svg" alt="google" className="w-8 h-8"/>
                     Google
                 </button>
-                <button onClick={signInGoogle} className="flex items-center gap-2 border border-blue-500 px-3 py-1 text-blue-500 w-32 justify-center">
+                <button onClick={signInGoogle} className="flex items-center gap-2 border-[2px] border-blue-500 px-3 py-1 text-blue-500 w-32 justify-center rounded-md hover:bg-blue-300">
                     <img src="/facebook-icon.svg" alt="facebook" className="w-8 h-8"/>
                     Facebook
                 </button>             
