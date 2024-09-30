@@ -22,7 +22,7 @@ const Projects = () => {
              
         };
         getProjectList()
-    }, []);
+    }, [projectCollectionRef]);
 
 
     return(

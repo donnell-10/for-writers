@@ -47,14 +47,7 @@ const Home = () => {
 
 
 
-
-   
-    )
-}
-
-export default Home;     
-
-{/* // <div style={{display:'flex', justifyContent:'space-between'}}>
+/* // <div style={{display:'flex', justifyContent:'space-between'}}>
         //     <div>
 
         //     </div>
@@ -62,4 +55,11 @@ export default Home;
         //     <div style={{padding:'10px'}}>
         //         <button className="bg-indigo-600 btn" >Sign In</button>
         //     </div>
-        // </div> */}
+        // </div> */
+
+   
+    )
+}
+
+export default Home;     
+
