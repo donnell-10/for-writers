@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import '../index.css';
 import Sidebar, { SidebarItem } from "../components/sidebar";
-import { Book, BookOpen, HomeIcon, PencilIcon, SwordsIcon, TableOfContents, TerminalIcon } from "lucide-react";
+import { BookOpen, HomeIcon, PencilIcon, SwordsIcon, TableOfContents, TerminalIcon } from "lucide-react";
 import HomePageButtons from "../components/homePageButtons";
 
 

@@ -28,13 +28,13 @@ export const Auth = () => {
             }
     }
 
-    const logout = async () => {
-        try{
-            await signOut(auth)}
-        catch(err){
-                console.log(err)
-            }
-    }
+    // const logout = async () => {
+    //     try{
+    //         await signOut(auth)}
+    //     catch(err){
+    //             console.log(err)
+    //         }
+    // }
 
     return (
         <div className="w-1/3 p-2 shadow-md bg-white rounded-lg">

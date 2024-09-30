@@ -1,10 +1,10 @@
-import React, { useCallback, useEffect, } from "react";
+import React, { useCallback, } from "react";
 import Quill from "quill";
 import "quill/dist/quill.snow.css"
-import { useRef } from "react";
+//import { useRef } from "react";
 import "../styles.css"
 import Sidebar, { SidebarItem } from "../components/sidebar";
-import { Book, BookOpen, HomeIcon, PencilIcon, SwordsIcon, TableOfContents, TerminalIcon } from "lucide-react";
+import {BookOpen, HomeIcon, PencilIcon, SwordsIcon, TableOfContents, TerminalIcon } from "lucide-react";
 
 
 const TOOLBAR_OPTIONS = [

@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useEffect, useState } from "react";
 
-import { Auth } from "../components/auth";
+//import { Auth } from "../components/auth";
 import { db } from "../config/firebase";
-import { getDocs, collection, doc } from "firebase/firestore";
+import { getDocs, collection, } from "firebase/firestore";
 const Projects = () => {
     const[projectList, setProjectList] = useState([])
 

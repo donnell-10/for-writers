@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 
-import { Auth } from './components/auth';
+
+
 import Home from './pages/home';
 import Login from './pages/login';
 // import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { db } from './config/firebase';
 
 import Write from './pages/write';
 import Projects from './pages/projects';
