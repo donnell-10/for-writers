@@ -47,7 +47,7 @@ export const Auth = () => {
             </div>
             <div>
                 <div>
-                    <h1 className=" text-black font-bold text-[45px]">
+                    <h1 className=" text-black font-poppins font-bold text-[45px]">
                         Sign In
                     </h1>
                 </div>
