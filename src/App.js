@@ -18,6 +18,7 @@ function App() {
     //     <Auth/>
     //   </div>
     // </div>
+  <div className='App'>
     <Router>
       <Routes>
         <Route path = '/' element={<Home/>}/>
@@ -26,6 +27,7 @@ function App() {
         <Route path = '/projects' element={<Projects/>}/>
       </Routes>
     </Router>
+  </div>
   );
 }
 
