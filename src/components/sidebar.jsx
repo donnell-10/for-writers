@@ -28,9 +28,12 @@ export default function Sidebar ({children}) {
                 <div className="border-t flex p-3">
                     <div className={`flex justify-between items-center overflow-hidden transition-all ${expanded? "w-52 ml-3" : "w-0"}`}>
                         <div className="leading-4">
-                            <h4>Profile</h4>
+                            <button className="hover:bg-indigo-50 p-1.5 rounded-lg flex-1 h-8 w-48 text-left text-gray-600 font-medium"
+                            onClick={() => navigate('/login')}>
+                                Sign In
+                            </button>
                         </div>
-                        <MoreVertical size={20}/>
+                        <MoreVertical size={20} className="text-gray-600"/>
                     </div>
                 </div>
             </nav>

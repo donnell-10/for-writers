@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Write from './pages/write';
 import Projects from './pages/projects';
+import Register from './pages/register';
 
 function App() {
  
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path = '/' element={<Home/>}/>
         <Route path='/login' element={<Login/>} />
+        <Route path='/register' element={<Register/>} />
         <Route path = '/write' element={<Write/>}/>
         <Route path = '/projects' element={<Projects/>}/>
       </Routes>

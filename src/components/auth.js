@@ -2,11 +2,12 @@ import { useState } from "react";
 import { auth, googleProvider } from "../config/firebase"
 import { createUserWithEmailAndPassword, signInWithPopup, } from "firebase/auth"
 import "../styles.css"
+import { Link, useNavigate } from "react-router-dom";
 
 //get {auth}
 
 export const Auth = () => {
-
+    const navigate = useNavigate();
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
@@ -37,10 +38,10 @@ export const Auth = () => {
     // }
 
     return (
-        <div className="w-1/3 p-2 shadow-md bg-white rounded-lg">
+        <div className="w-1/2 p-2 shadow-md bg-white rounded-lg">
         
             <div className=" flex ">
-                <button className=" max-w-[300px] flex items-center">
+                <button className=" max-w-[300px] flex items-center" onClick={() => navigate('/')}>
                     <img src="/logo-no-background.svg" alt="logo" className=" w-auto"/>
                 </button>
   
@@ -55,9 +56,9 @@ export const Auth = () => {
                     <h2>
                         Don't have an account? 
                     </h2>
-                    <h2 className=" underline">
+                    <Link className=" underline"  to='/register' >
                         Sign Up
-                    </h2>
+                    </Link>
                 </div>
             </div>
             <div className="pt-3 px-6">
@@ -92,7 +93,7 @@ export const Auth = () => {
                     Facebook
                 </button>             
             </div>
-
+            
             {/* <button onClick={logout}>Log Out</button> */}
         </div>
     );
