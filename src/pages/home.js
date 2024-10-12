@@ -24,6 +24,7 @@ const Home = () => {
             
           </div> */}
           <HomePageButtons/>
+          
         </div>
       </div>
       // <div style={{background:'white', height:'100%'}}>

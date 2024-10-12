@@ -1,6 +1,8 @@
 import { ChevronFirst, ChevronLast, MoreVertical } from "lucide-react";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { auth } from "../config/firebase";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 
 
 const SidebarContext = createContext();
@@ -8,6 +10,29 @@ const SidebarContext = createContext();
 export default function Sidebar ({children}) {
     const navigate = useNavigate();
     const [expanded, setExpanded] = useState(true)
+    const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+            if (currentUser){
+                setUser(currentUser);
+            } else {
+                setUser(null)
+            }
+            
+        })
+        return () => unsubscribe();
+    })
+
+    const handleLogout = async () => {
+        try {
+            await signOut(auth);
+            navigate('/login')
+        } catch(err) {
+            console.log("logout failed", err)
+        }
+    }
+
     return (
         <>
         <aside className="h-screen sticky">
@@ -28,10 +53,17 @@ export default function Sidebar ({children}) {
                 <div className="border-t flex p-3">
                     <div className={`flex justify-between items-center overflow-hidden transition-all ${expanded? "w-52 ml-3" : "w-0"}`}>
                         <div className="leading-4">
+                            {user ? (
+                            <button className="hover:bg-indigo-50 p-1.5 rounded-lg flex-1 h-8 w-48 text-left text-gray-600 font-medium" onClick={handleLogout}>
+                               {user.displayName || "User"} 
+                            </button>
+                            ) : (
                             <button className="hover:bg-indigo-50 p-1.5 rounded-lg flex-1 h-8 w-48 text-left text-gray-600 font-medium"
                             onClick={() => navigate('/login')}>
                                 Sign In
                             </button>
+                            )}
+
                         </div>
                         <MoreVertical size={20} className="text-gray-600"/>
                     </div>
