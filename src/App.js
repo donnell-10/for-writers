@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Write from './pages/write';
 import Projects from './pages/projects';
 import Register from './pages/register';
+import PrivateLibrary from './pages/priv-library';
 
 function App() {
  
@@ -27,6 +28,7 @@ function App() {
         <Route path='/register' element={<Register/>} />
         <Route path = '/write' element={<Write/>}/>
         <Route path = '/projects' element={<Projects/>}/>
+        <Route path = '/private-library' element = {<PrivateLibrary/>}/>
       </Routes>
     </Router>
   </div>
