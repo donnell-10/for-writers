@@ -35,8 +35,9 @@ export default function Sidebar ({children}) {
 
     return (
         <>
-        <aside className="h-screen sticky">
-            <nav className="h-full flex flex-col border-r shadow-sm bg-purple-300 ">
+        <div className={` transition-all ${expanded? "w-[370px] 2xl:w-[340px]" : "w-[70px] "}`}>
+        <aside className="h-screen fixed left-0 bottom-0">
+            <nav className="h-full flex flex-col  shadow-md bg-purple-300 ">
                 <div className="p-4 pb-2 flex justify-between items-center ">  
                     <button>
                         {expanded? <img src="/logo-no-background.svg" alt="logo" className=" w-30  h-8" onClick={() => navigate('/')}/> : <></> }
@@ -70,6 +71,7 @@ export default function Sidebar ({children}) {
                 </div>
             </nav>
         </aside>
+        </div>
         </>
     )
 
