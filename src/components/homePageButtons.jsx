@@ -3,21 +3,21 @@ import { useNavigate } from "react-router-dom";
 const HomePageButtons =  () => {
     const navigate = useNavigate();
     return (
-        <div className="flex justify-between p-6">
-            <button className="w-[275px] h-[275px]  border-4 bg-purple-300 hover:bg-purple-400 font-poppins" style={{borderRadius:'70px'}}>
-                <h1 className="text-[50px] text-black">Prompts</h1>
-                <p className="text-[12px] p-2 text-black">Don't know what to write? Let us give you an idea to kickstart you creative engine.</p>
+        <div className="flex justify-between gap-10 p-6 ">
+            <button className="w-[280px] h-[280px]  border-4 bg-purple-300 hover:bg-purple-400 font-poppins" style={{borderRadius:'70px'}}>
+                <h1 className="text-[50px] text-black font-bold">Prompts</h1>
+                <p className="text-[14px] p-2 text-black font-semibold">Don't know what to write? Let us give you an idea to kickstart you creative engine.</p>
             
             </button>
-            <button className="w-[275px] h-[275px] border-4 bg-purple-400 hover:bg-purple-500 font-poppins" style={{borderRadius:'70px'}}
+            <button className="w-[280px] h-[280px] border-4 bg-purple-400 hover:bg-purple-500 font-poppins " style={{borderRadius:'70px'}}
             onClick={() => navigate('/write')} >
-                <h1 className="text-[50px] text-black">Write</h1>
-                <p className="text-[12px] p-2 text-black">Put your ideas on a page and bring the world in you mind to life.</p>
+                <h1 className="text-[50px] text-black font-bold">Write</h1>
+                <p className="text-[14px] p-2 text-black font-semibold">Put your ideas on a page and bring the world in you mind to life.</p>
             
             </button>
-            <button className="w-[275px] h-[275px] border-4 bg-purple-300 hover:bg-purple-400 font-poppins" style={{borderRadius:'70px'}}>
-                <h1 className="text-[50px] text-black">Read</h1>
-                <p className="text-[12px] p-2 text-black">Enter a library composed of the work of writers all over the word. From beginners to experts!</p>
+            <button className="w-[280px] h-[280px] border-4 bg-purple-300 hover:bg-purple-400 font-poppins " style={{borderRadius:'70px'}}>
+                <h1 className="text-[50px] text-black font-bold">Read</h1>
+                <p className="text-[14px] p-2 text-black font-semibold">Enter a library composed of the work of writers all over the word. From beginners to experts!</p>
             
             </button>
         </div>
