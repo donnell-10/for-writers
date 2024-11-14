@@ -105,12 +105,12 @@ const Home = () => {
                       {user? ("Public Library"): ("Sign Up")}
                       </button>
                     </div>                
-                    <div className="w-[500px] relative z-10 bg-purple-400 rounded-3xl mt-10 text-center p-3 text-xl text-black font-poppins font-semibold shadow-xl">
-                      For Writers... The Workspace for dreamers ready to put their elaborate ideas to paper. For Authors, for poets, for screenwriters,
-                      for bloggers, for pantsers, for planners.
-
-                      <br/>For Writers
+                    <div className="w-[500px] relative z-10 bg-purple-400 rounded-3xl mt-10 text-center p-3 text-xl font-poppins font-semibold shadow-xl text-black">
+                      <p> <span class="highlight">For Writers</span>... The Workspace for dreamers ready to put their elaborate ideas to paper.</p>
+                      <p>For Authors, for poets, for screenwriters, for bloggers, for pantsers, for planners.</p>
+                      <p><span class="highlight">For Writers</span></p>
                     </div>
+
                 </div>
 
               </div>
