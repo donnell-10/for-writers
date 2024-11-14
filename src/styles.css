@@ -117,6 +117,25 @@ position: relative;
     border-right: 10px solid transparent;
     border-top: 10px solid #000; /* Matches the dropdown background color */
   }
+
+  .highlight {
+    background: linear-gradient(90deg, #000000, #ff4500, #eb0fd8, #873bdd);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient-animation 5s infinite;
+    font-weight: bold;
+  }
+  
+  @keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .highlight {
+    background-size: 200% 200%;
+  }
+  
   
 
 

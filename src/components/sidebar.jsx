@@ -38,7 +38,13 @@ export default function Sidebar({ children }) {
 
   // Toggle dropdown visibility
   const handleProfileClick = () => {
-    setDropdownVisible(!dropdownVisible);
+    if(user == null){
+      navigate("/login");
+    }else{
+      setDropdownVisible(!dropdownVisible);
+    }
+    
+    
   };
 
   // Close dropdown when clicking outside
@@ -97,7 +103,7 @@ export default function Sidebar({ children }) {
                   alt="User Avatar"
                   className="w-8 h-8 rounded-full"
                 /> */}
-                {expanded && <span className="ml-3">{user ? user.displayName : "User"}</span>}
+                {expanded && <span className="ml-3">{user ? user.displayName : "Log In"}</span>}
               </button>
 
               {/* <MoreVertical size={20} className="text-gray-600 ml-auto" /> */}
